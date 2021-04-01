@@ -28,6 +28,8 @@ There are many ways to do this:
 
 ###### 4.1 You can download a json schema directly from GraphQL Playground by clicking Schema > Download in the right pane.
 
+![Screenshot](screenshots/download_schema.png)
+
 ###### 4.2 Another way is to download the schema file using the downloadApolloSchema task:
 ```
 ./gradlew downloadApolloSchema \
@@ -38,27 +40,26 @@ There are many ways to do this:
 ###### 4.3 However, I had issues with both of the above mentioned methods. So, I tried to use the graphqlconfig file to generate the schema.
 In order to do this, click on the GraphQL tab in Android Studio 
 
-(insert screenshot here)
+![Screenshot](screenshots/graphql_config.png)
 
 Click on `Endpoints` folder and then click on plus icon on left pane to add a graphql configuration file.
 Edit the configuartion file and update the Default GraphQL endpoint url to the following:
 https://apollo-fullstack-tutorial.herokuapp.com/graphql
 
-Also change the value for `schemaPath` to `schema.json`
-
-<Insert screenshot for config file>
-
-Now click on the green play button in the left gutter. 
-This should generate the correct schema.json file.
+Also change the value for `schemaPath` to `schema.json`. Now click on the green play button in the left gutter. This should generate the correct schema.json file.
 
 ##### 5. Add a query 
 
  ###### 5.1 Prototype your query in GraphQL Playground
+ 
  https://apollo-fullstack-tutorial.herokuapp.com/
 
- <Insert screenshot here>
-
  ###### 5.2 Next, add the query to the project. For this, create a new file named LaunchList.graphql under the folder:
- src/main/graphql/app/android/wfn/graphqldemo
+ 
+ `src/main/graphql/app/android/wfn/graphqldemo`
 
  Ensure that the query file is at the same level as the schema.json file.
+ 
+ ##### App Screenshot
+ 
+ ![Screenshot](screenshots/launch_list.png)
